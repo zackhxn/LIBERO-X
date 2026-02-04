@@ -47,10 +47,17 @@ function scrollTrack(btn, direction) {
     const track = wrapper.querySelector('.carousel-track');
     const item = track ? track.querySelector('.episode-card') : null;
     if (!track || !item) return;
-    const gap = 20;
-    const scrollAmount = item.offsetWidth + gap;
+    const scrollAmount = track.clientWidth || (item.offsetWidth + 20);
     track.scrollBy({
         left: direction * scrollAmount,
         behavior: 'smooth'
     });
 }
+
+// Fallback: delegate clicks in case inline handlers are blocked
+document.addEventListener('click', (event) => {
+    const btn = event.target.closest('.nav-btn');
+    if (!btn) return;
+    const direction = btn.classList.contains('prev-btn') ? -1 : 1;
+    scrollTrack(btn, direction);
+});
