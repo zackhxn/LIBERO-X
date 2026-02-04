@@ -341,6 +341,9 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.4px;
   color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .status-success {
