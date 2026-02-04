@@ -331,49 +331,139 @@
       <div class="columns is-centered">
         <div class="column is-10">
           <div class="content has-text-centered">
-            <!-- Carousel -->
-            <div id="results-carousel" class="carousel results-carousel" style="display: flex; flex-direction: column; gap: 40px; justify-content: center; ">
-
-              <!-- Example 1 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/case_26.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 2 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/case_27.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 3 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/case_28.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 4 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/case_29.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 5 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/case_30.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 1 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/creation_1.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 2 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/creation_2.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 3 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/creation_3.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
-              </div>
-              <!-- Example 4 -->
-              <div class="carousel-item">
-                <img src="static/images/libero-x/cases/creation_4.png" alt="Seriesbench Example" style="max-width: 75%; width: auto; height: auto; margin: 0 auto;" />
+            <div class="task-block">
+              <div class="task-header">Level 1</div>
+              <div class="carousel-wrapper">
+                <button class="nav-btn prev-btn" onclick="scrollTrack(this, -1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn next-btn" onclick="scrollTrack(this, 1)"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-track">
+                  <div class="episode-card">
+                    <div class="episode-label-tag">Task 1</div>
+                    <div class="episode-desc">open the middle drawer of the wooden cabinet</div>
+                    <div class="video-group five">
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_1/openvla_oft_libero_x_rollout_SCENE1_042_open_the_middle_drawer_of_the_wooden_cabinet_ep001_failure.mp4"></video>
+                        <div class="method-label">OpenVLA-OFT</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_1/pi0_libero_x_rollout_SCENE1_042_open_the_middle_drawer_of_the_wooden_cabinet_ep001_failure.mp4"></video>
+                        <div class="method-label">π0</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_1/xvla_libero_x_rollout_SCENE1_042_open_the_middle_drawer_of_the_wooden_cabinet_ep001_failure.mp4"></video>
+                        <div class="method-label">X-VLA</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_1/gr00t_libero_x_rollout_SCENE1_042_open_the_middle_drawer_of_the_wooden_cabinet_ep001_success.mp4"></video>
+                        <div class="method-label">GR00T1.5</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_1/pi05_libero_x_rollout_SCENE1_042_open_the_middle_drawer_of_the_wooden_cabinet_ep001_success.mp4"></video>
+                        <div class="method-label">π0.5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="episode-card">
+                    <div class="episode-label-tag">Task 2</div>
+                    <div class="episode-desc">place the red mug into the left desk caddy's left compartment</div>
+                    <div class="video-group five">
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_2/openvla_oft_libero_x_rollout_SCENE1_349_place_the_red_mug_into_the_left_desk_caddy_s_left_compartment_ep002_success.mp4"></video>
+                        <div class="method-label">OpenVLA-OFT</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_2/pi0_libero_x_rollout_SCENE1_349_place_the_red_mug_into_the_left_desk_caddy_s_left_compartment_ep004_success.mp4"></video>
+                        <div class="method-label">π0</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_2/xvla_libero_x_rollout_SCENE1_349_place_the_red_mug_into_the_left_desk_caddy_s_left_compartment_ep004_failure.mp4"></video>
+                        <div class="method-label">X-VLA</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_2/gr00t_libero_x_rollout_SCENE1_349_place_the_red_mug_into_the_left_desk_caddy_s_left_compartment_ep001_failure.mp4"></video>
+                        <div class="method-label">GR00T1.5</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_2/pi05_libero_x_rollout_SCENE1_349_place_the_red_mug_into_the_left_desk_caddy_s_left_compartment_ep001_success.mp4"></video>
+                        <div class="method-label">π0.5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="episode-card">
+                    <div class="episode-label-tag">Task 3</div>
+                    <div class="episode-desc">place the white yellow mug on top of the shelf</div>
+                    <div class="video-group five">
+                      <div class="video-col">
+                        <div class="status-pill status-failure">Failure</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_3/openvla_oft_libero_x_rollout_SCENE49_554_place_the_white_yellow_mug_on_top_of_the_shelf_ep001_failure.mp4"></video>
+                        <div class="method-label">OpenVLA-OFT</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_3/pi0_libero_x_rollout_SCENE49_554_place_the_white_yellow_mug_on_top_of_the_shelf_ep001_success.mp4"></video>
+                        <div class="method-label">π0</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_3/xvla_libero_x_rollout_SCENE49_554_place_the_white_yellow_mug_on_top_of_the_shelf_ep001_success.mp4"></video>
+                        <div class="method-label">X-VLA</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_3/gr00t_libero_x_rollout_SCENE49_554_place_the_white_yellow_mug_on_top_of_the_shelf_ep001_success.mp4"></video>
+                        <div class="method-label">GR00T1.5</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_3/pi05_libero_x_rollout_SCENE49_554_place_the_white_yellow_mug_on_top_of_the_shelf_ep001_success.mp4"></video>
+                        <div class="method-label">π0.5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="episode-card">
+                    <div class="episode-label-tag">Task 4</div>
+                    <div class="episode-desc">place the black bowl to the right of the bowl drainer</div>
+                    <div class="video-group five">
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_4/openvla_oft_libero_x_rollout_SCENE9_281_place_the_black_bowl_to_the_right_of_the_bowl_drainer_ep002_success.mp4"></video>
+                        <div class="method-label">OpenVLA-OFT</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_4/pi0_libero_x_rollout_SCENE9_281_place_the_black_bowl_to_the_right_of_the_bowl_drainer_ep001_success.mp4"></video>
+                        <div class="method-label">π0</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_4/xvla_libero_x_rollout_SCENE9_281_place_the_black_bowl_to_the_right_of_the_bowl_drainer_ep001_success.mp4"></video>
+                        <div class="method-label">X-VLA</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_4/gr00t_libero_x_rollout_SCENE9_281_place_the_black_bowl_to_the_right_of_the_bowl_drainer_ep001_success.mp4"></video>
+                        <div class="method-label">GR00T1.5</div>
+                      </div>
+                      <div class="video-col">
+                        <div class="status-pill status-success">Success</div>
+                        <video autoplay loop muted playsinline controls preload="metadata" src="static/images/libero-x/test_cases/label_1/task_4/pi05_libero_x_rollout_SCENE9_281_place_the_black_bowl_to_the_right_of_the_bowl_drainer_ep001_success.mp4"></video>
+                        <div class="method-label">π0.5</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <p style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-              <strong>Case Study</strong>: Figure and caption to be updated.
-            </p>
           </div>
         </div>
       </div>

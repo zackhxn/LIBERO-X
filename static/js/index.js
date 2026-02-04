@@ -39,3 +39,18 @@ $(document).ready(function() {
     bulmaSlider.attach();
 
 })
+
+// Test cases carousel controls
+function scrollTrack(btn, direction) {
+    const wrapper = btn.closest('.carousel-wrapper');
+    if (!wrapper) return;
+    const track = wrapper.querySelector('.carousel-track');
+    const item = track ? track.querySelector('.episode-card') : null;
+    if (!track || !item) return;
+    const gap = 20;
+    const scrollAmount = item.offsetWidth + gap;
+    track.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
