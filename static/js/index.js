@@ -56,16 +56,15 @@ function scrollTrack(btn, direction) {
     const item = track ? track.querySelector('.episode-card') : null;
     if (!track || !item) return;
     const scrollAmount = track.clientWidth || (item.offsetWidth + 20);
-    track.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
-    });
+    track.scrollLeft += direction * scrollAmount;
 }
 
 // Fallback: delegate clicks in case inline handlers are blocked
-document.addEventListener('click', (event) => {
-    const btn = event.target.closest('.nav-btn');
-    if (!btn) return;
-    const direction = btn.classList.contains('prev-btn') ? -1 : 1;
-    scrollTrack(btn, direction);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.carousel-wrapper .nav-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const direction = btn.classList.contains('prev-btn') ? -1 : 1;
+            scrollTrack(btn, direction);
+        });
+    });
 });
