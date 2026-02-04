@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.episode-desc').forEach((el) => {
+    const text = (el.textContent || '').trim();
+    if (!text) return;
+    el.textContent = text.charAt(0).toUpperCase() + text.slice(1);
+  });
+});
+
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
