@@ -126,6 +126,19 @@ body {
   overflow: hidden;
 }
 
+#train-carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#train-carousel .carousel-item video {
+  order: 1;
+}
+
+#train-carousel .carousel-item .caption {
+  order: 2;
+}
+
 /* .results-carousel .item {
   margin: 20px;
   overflow: hidden;
@@ -263,6 +276,7 @@ img {
   color: #666;
   font-size: 0.9rem;
   margin-bottom: 12px;
+  text-transform: capitalize;
 }
 
 .task-block .video-group {
@@ -286,7 +300,8 @@ img {
 
 .video-col video {
   width: 100%;
-  height: 150px;
+  aspect-ratio: 1 / 1;
+  height: auto;
   object-fit: cover;
   border-radius: 4px;
   background: #000;
