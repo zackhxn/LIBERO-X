@@ -164,6 +164,19 @@ img {
   line-height: 1.5;
 }
 
+.results-carousel .slider-pagination {
+  margin-top: 20px;
+}
+
+.results-carousel .slider-page {
+  background: #b3b3b3;
+  opacity: 1;
+}
+
+.results-carousel .slider-page.is-active {
+  background: #666666;
+}
+
 .stats-image {
   max-height: 250px;
 }

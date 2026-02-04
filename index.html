@@ -64,7 +64,7 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
               Reliable benchmarking is critical for advancing Vision-Language-Action (VLA) models, as it reveals their generalization, robustness, and alignment of perception with language-driven manipulation tasks. However, existing benchmarks often provide limited or misleading assessments due to insufficient evaluation protocols that inadequately capture real-world distribution shifts. This work systematically rethinks VLA benchmarking from both evaluation and data perspectives, introducing LIBERO-X, a benchmark featuring: 1) A hierarchical evaluation protocol with progressive difficulty levels targeting three core capabilities: spatial generalization, object recognition, and task instruction understanding. This design enables fine-grained analysis of performance degradation under increasing environmental and task complexity; 2) A high-diversity training dataset collected via human teleoperation, where each scene supports multiple fine-grained manipulation objectives to bridge the train-evaluation distribution gap. Experiments with representative VLA models reveal significant performance drops under cumulative perturbations, exposing persistent limitations in scene comprehension and instruction grounding. By integrating hierarchical evaluation with diverse training data, LIBERO-X offers a more reliable foundation for assessing and advancing VLA development.
           </div>
@@ -85,6 +85,20 @@
                 progressively escalates complexity, revealing significant performance degradation across VLA models as
                 difficulty increases, thus enabling rigorous robustness assessment.
             </p>
+            <div class="content has-text-justified" style="margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
+              <p><strong>The main contributions of this work are three-fold.</strong> </p>
+              <ul>
+                <li>We propose LIBERO-X, a comprehensive benchmark for manipulation that introduces
+                a progressively challenging evaluation framework with multi-label annotations and jointly perturbs spatial
+                layouts, object properties, and instruction semantics to systematically characterize model performance under
+                multi-dimensional distribution shifts.</li>
+                <li>We construct a high-diversity training dataset comprising 2,520 demonstrations, 600 tasks, and 100
+                scenes collected via human teleoperation, substantially increasing scene diversity and task granularity.</li>
+                <li>Extensive experiments on fine-tuned representative VLA models reveal notable performance degradation
+                as task and scene complexity increase, highlighting critical limitations in scene comprehension and
+                instruction grounding and offering empirical insights for future model design.</li>
+              </ul>
+            </div>
           </div>
         </div>
     </div>
@@ -163,7 +177,7 @@
             <h2 class="title is-3">Examples from LIBERO-X Training Set</h2>
             <div id="train-carousel" class="carousel results-carousel" style="display: flex; flex-direction: column; gap: 40px; justify-content: center;">
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/001_put_the_yellow_bowl_in_the_bottom_drawer_of_the_white_cabinet.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -171,7 +185,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/002_close_the_bottom_drawer_of_the_white_cabinet_and_put_the_red_bowl_on_the_plate.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -179,7 +193,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/003_close_the_bottom_drawer_of_the_white_cabinet_and_put_the_yellow_bowl_on_the_plate.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -187,7 +201,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/004_close_the_bottom_drawer_of_the_white_cabinet.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -195,7 +209,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/005_put_the_green_bowl_in_the_bottom_drawer_of_the_white_cabinet_and_close_the_drawer.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -203,7 +217,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/006_put_the_green_bowl_in_the_bottom_drawer_of_the_white_cabinet.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -211,7 +225,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/007_put_the_red_bowl_in_the_bottom_drawer_of_the_white_cabinet_and_close_the_drawer.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -219,7 +233,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/008_put_the_red_bowl_in_the_bottom_drawer_of_the_white_cabinet.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -227,7 +241,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/009_put_the_yellow_bowl_in_the_bottom_drawer_of_the_white_cabinet_and_close_the_drawer.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -235,7 +249,7 @@
                 </p>
               </div>
               <div class="carousel-item">
-                <video controls playsinline preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
+                <video autoplay loop muted playsinline controls preload="metadata" style="max-width: 80%; width: auto; height: auto; margin: 0 auto;">
                   <source src="static/images/libero-x/train_cases/010_close_the_bottom_drawer_of_the_white_cabinet_and_put_the_green_bowl_on_the_plate.mp4" type="video/mp4" />
                 </video>
                 <p class="caption" style="text-align: center; margin-top: 14px;">
@@ -265,7 +279,11 @@
           <div class="content has-text-centered">
             <img src="static/images/libero-x/main_result.png" alt="Seriesbench Example" style="max-width: 95%; width: auto; height: auto; margin: 0 auto;" />
             <p style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-              <strong>Multi-level evaluation results (placeholder)</strong>: Figure and caption to be updated.
+              <strong>Accuracy under Multi-level Evaluation.</strong>
+            </p>
+            <img src="static/images/libero-x/main_result_2.png" alt="Multi-level evaluation results" style="max-width: 95%; width: auto; height: auto; margin: 20px auto 0;" />
+            <p style="text-align: center; margin-top: 12px; width: 85%; margin-left: auto; margin-right: auto;">
+              <strong>Success Rate Decline across Multi-level Evaluation.</strong>
             </p>
           </div>
           <!-- 图片容器 -->
