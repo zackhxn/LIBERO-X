@@ -77,7 +77,13 @@
             <img src="static/images/libero-x/ROT.png" alt="Overview of Method" style="max-width: 85%;"/>
             <p class="caption"
                 style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-                <strong>Overview of LIBERO-X (placeholder)</strong>: Figure and caption to be updated.
+                <strong>Comparison with related simulation benchmarks.</strong> (a): LIBERO lacks diversity by coupling
+                scenes with homogeneous trajectories, inducing action overfitting, while its test set closely mirrors
+                training data. (b): Recent extensions reuse original training trajectories, introducing perturbations
+                but model them independently, failing to capture complex distribution shifts. (c): LIBERO-X enhances
+                training via multi-task scenes with diverse trajectories. Its multi-level evaluation protocol
+                progressively escalates complexity, revealing significant performance degradation across VLA models as
+                difficulty increases, thus enabling rigorous robustness assessment.
             </p>
           </div>
         </div>
@@ -101,44 +107,20 @@
           <div class="content has-text-centered">
             <h2 class="title is-3">Statistics</h2>
               <!-- 图片容器 -->
-              <div class="content has-text-centered"
-                   style="display: flex; gap: 20px; justify-content: center; align-items: stretch; flex-wrap: wrap;">
-
-                <!-- 左侧图片 -->
-                <div class="image-item" style="flex: 1; min-width: 300px; display: flex;">
-                  <img src="static/images/libero-x/video_4.png"
-                       alt="data_category"
-                       style="width: 120%; height: auto; object-fit: contain; align-self: stretch;" />
-                </div>
-
-                <!-- 右侧图片 -->
-                <div class="image-item" style="flex: 1; min-width: 300px; display: flex;">
-                  <img src="static/images/libero-x/intro.png"
-                       alt="task_dimension"
-                       style="width: 120%; height: auto; object-fit: contain; align-self: stretch;" />
-                </div>
+              <div class="content has-text-centered">
+                <img src="static/images/libero-x/intro.png"
+                     alt="Overview of LIBERO-X"
+                     style="max-width: 85%; height: auto; object-fit: contain;" />
               </div>
 
               <!-- 图题说明 -->
               <p class="caption"
                  style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-                <strong>Composition and task distribution of LIBERO-X</strong>: Figure and caption to be updated.
+                <strong>Overview of LIBERO-X.</strong> LIBERO-X provides a high-diversity training dataset constructed
+                through human teleoperation, along with multi-level and multi-label evaluation data.
               </p>
           </div>
 
-          <div class="content has-text-centered">
-              <!-- 图片容器 -->
-              <div class="content has-text-centered">
-                <img src="static/images/libero-x/label.png" alt="Overview of Method" style="max-width: 85%;"/>
-                <!-- 图题说明 -->
-                <p class="caption"
-                   style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-                  <strong>Task taxonomy and example tasks</strong>: Figure and caption to be updated.
-                </p>
-              </div>
-
-          </div>
-          
         </div>
       </div>
     </div>
@@ -158,7 +140,14 @@
                 </div>
                 <!-- Caption -->
                 <p style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-                  <strong>LIBERO-X vs. existing benchmarks</strong>: Figure and caption to be updated.
+                  <strong>Comparison with other simulation benchmarks.</strong> Name: Name of each benchmark.
+                  Simulator: ManiSkill2 [10], MuJoCo [33], RLBench [14] and NVIDIA Isaac Sim [27]. Date: Release date.
+                  Training Data: Availability of training set. If provided, indicates automation, indicates manual
+                  annotation. Testing Data: Availability of independent testing set. Multi-level Evaluation: Adoption
+                  of multi-level framework. L1: Local Spatial Perturbation, L2: Extended Spatial Perturbation, L3: Scene
+                  Topology Reconstruction, L4: Visual Attribute Variation, and L5: Semantic-Equivalent Reformulation.
+                  Multi-label Evaluation: Task label across multiple dimensions. IT: Interaction Type. SC: Subtask
+                  Count. SR: Spatial Relation. OA: Object Attribute.
                 </p>
               </div>
           </div>
