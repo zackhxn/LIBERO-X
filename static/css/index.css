@@ -218,8 +218,10 @@ img {
   overflow: hidden;
 }
 
-.carousel-track {
+.task-block .carousel-track {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -228,12 +230,13 @@ img {
   scrollbar-width: none;
 }
 
-.carousel-track::-webkit-scrollbar {
+.task-block .carousel-track::-webkit-scrollbar {
   display: none;
 }
 
-.episode-card {
+.task-block .episode-card {
   flex: 0 0 100%;
+  min-width: 100%;
   scroll-snap-align: center;
   background: #fff;
   border-radius: 8px;
