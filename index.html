@@ -85,13 +85,11 @@
             <img src="static/images/libero-x/intro.png" alt="Overview of Method" style="max-width: 85%;"/>
             <p class="caption"
                 style="text-align: center; margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
-                <strong>Comparison with related simulation benchmarks.</strong> (a): LIBERO lacks diversity by coupling
-                scenes with homogeneous trajectories, inducing action overfitting, while its test set closely mirrors
-                training data. (b): Recent extensions reuse original training trajectories, introducing perturbations
-                but model them independently, failing to capture complex distribution shifts. (c): LIBERO-X enhances
-                training via multi-task scenes with diverse trajectories. Its multi-level evaluation protocol
-                progressively escalates complexity, revealing significant performance degradation across VLA models as
-                difficulty increases, thus enabling rigorous robustness assessment.
+                <strong>Comparison with related simulation benchmarks.</strong> (a): LIBERO couples scenes with
+                homogeneous trajectories, limiting diversity and making tests mirror training. (b): Extensions reuse
+                original trajectories with independent perturbations, missing complex distribution shifts. (c):
+                LIBERO-X uses multi-task scenes with diverse trajectories and a multi-level evaluation that reveals
+                performance drops as difficulty increases.
             </p>
             <div class="content has-text-justified" style="margin-top: 20px; width: 85%; margin-left: auto; margin-right: auto;">
               <p><strong>The main contributions of this work are three-fold.</strong> </p>
