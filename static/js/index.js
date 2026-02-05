@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.episode-desc').forEach((el) => {
     const text = (el.textContent || '').trim();
     if (!text) return;
-    el.textContent = text.charAt(0).toUpperCase() + text.slice(1);
+    let updated = text.charAt(0).toUpperCase() + text.slice(1);
+    if (!/[.!?]$/.test(updated)) {
+      updated += '.';
+    }
+    el.textContent = updated;
   });
 });
 
@@ -41,8 +45,9 @@ $(document).ready(function() {
 			autoplaySpeed: 5000,
     }
 
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+		// Initialize all carousels except training set
+    var carousels = bulmaCarousel.attach('.carousel:not(#train-carousel)', options);
+    // Training set carousel: disable autoplay
     bulmaCarousel.attach('#train-carousel', Object.assign({}, options, { autoplay: false }));
 	
     bulmaSlider.attach();
