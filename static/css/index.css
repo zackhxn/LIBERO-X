@@ -144,6 +144,11 @@ body {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
   justify-items: center;
+  background: #f8f9fb;
+  border: 1px solid #eceff3;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .train-item video {
