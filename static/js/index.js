@@ -65,6 +65,20 @@ function scrollTrack(btn, direction) {
     track.scrollLeft += direction * scrollAmount;
 }
 
+function copyBibtex(button) {
+    const content = document.getElementById('bibtex-content').innerText;
+    navigator.clipboard.writeText(content).then(() => {
+        const btnTextSpan = button.querySelector('.btn-text');
+        button.classList.add('copied');
+        btnTextSpan.innerText = 'Copied!';
+        setTimeout(() => {
+            button.classList.remove('copied');
+            btnTextSpan.innerText = 'Copy';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
 // Fallback: delegate clicks in case inline handlers are blocked
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.carousel-wrapper .nav-btn').forEach((btn) => {

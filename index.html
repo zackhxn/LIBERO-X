@@ -39,12 +39,12 @@
           <span class="author-block">Qingjie Liu</span>,
           <span class="author-block">Jinjin Zhang</span>,
           <span class="author-block">Jiancheng Cai</span>,
-          <span class="author-block">Junjie Liu</span>,
-          <span class="author-block">Xinmin Liu</span><br>
+          <span class="author-block">Junjie Liu<sup style="color:#1E90FF">*</sup></span>,
+          <span class="author-block">Xinmin Liu<sup style="color:#6A5ACD">&spades;</sup></span><br>
 
           <span class="eql-cntrb"><small><sup style="color:#FF69B4">†</sup>Equal Contribution.</small></span>
           <span class="eql-cntrb"><small><sup style="color:#6A5ACD">&spades;</sup>Project Leader.</small></span>
-          <span class="eql-cntrb"><small><sup style="color:#1E90FF">*</sup>Corresponding Authors.</small></span>
+          <span class="eql-cntrb"><small><sup style="color:#1E90FF">*</sup>Corresponding Author.</small></span>
         </div>
 
         <!-- Links/buttons -->
@@ -1184,12 +1184,17 @@
   <section class="section">
     <div class="container is-max-desktop content">
       <h2 class="title is-4">BibTeX</h2>
-      <pre><code>@misc{libero-x2025,
+      <div class="bibtex-container">
+        <button class="copy-btn" onclick="copyBibtex(this)">
+          <span class="btn-text">Copy</span>
+        </button>
+        <pre><code id="bibtex-content">@misc{libero-x2025,
       title={LIBERO-X: Robustness Litmus for Vision-Language-Action Models},
       author={?},
       year={?},
       note={To be updated},
 }</code></pre>
+      </div>
     </div>
   </section>
 
