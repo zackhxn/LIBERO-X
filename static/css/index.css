@@ -139,6 +139,34 @@ body {
   order: 2;
 }
 
+.train-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
+.train-item video {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #000;
+}
+
+@media (max-width: 1024px) {
+  .train-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .train-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* .results-carousel .item {
   margin: 20px;
   overflow: hidden;
